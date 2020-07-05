@@ -14,14 +14,14 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     
     //增加一个员工
-    @Transaction
+    @Transactional
     @Override
     public void save(Employee employee) throws Exception {
         employeeDao.save(employee);
     }
 
     //修改员工信息
-    @Transaction
+    @Transactional
     @Override
     public void update(Employee employee)throws Exception{
          employeeDao.update(employee);
